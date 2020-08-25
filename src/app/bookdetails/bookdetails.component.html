@@ -1,0 +1,11 @@
+<h3>book details</h3>
+<ul>
+    <li *ngFor="let book of books|async">
+       <b>ID:</b> {{book.id}}<br>
+       <b>NAME:</b>{{book.name}}<br>
+       <b>AUTHOR:</b>{{book.author}}<br>
+       <b>STATE:</b>{{book.state}}<br>
+
+    </li>
+</ul>
+<button type="button" (click)="close()">CLOSE</button>
